@@ -1,16 +1,37 @@
-<% include partials/header %>
-
-<link rel="stylesheet" href="./stylesheets/landing.css">
-
-<div class="container">
-    <div class="jumbotron">
-        <div id="text-container">
-            <h1>YelpCamp</h1>
-            <p>Start planning your next trip today</p>
-            <hr />
-            <a class="btn btn-default btn-lg" href="/campgrounds"><i class="fas fa-tree"></i> Get Started</a>
-        </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YelpCamp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+    
+    <div class="container">
+        <% if(eMessage && eMessage.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= eMessage %>
+            </div>
+        <% } %>
+        <% if(sMessage && sMessage.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= sMessage %>
+            </div>
+        <% } %>
     </div>
-</div>
+    
+    <div id="landing-header">
+ 		<h1>Welcome to YelpCamp!</h1>
+		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
 <% include partials/footer %>
