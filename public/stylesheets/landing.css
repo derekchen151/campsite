@@ -1,0 +1,9 @@
+.container .jumbotron {
+    color: white;
+    margin-top: 12em;
+    font-weight: 400;
+}
+
+#text-container {
+    text-align: center;
+}

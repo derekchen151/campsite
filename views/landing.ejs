@@ -1,7 +1,16 @@
 <% include partials/header %>
-<h1>landing page</h1>
-<p>Welcome to the YelpCamp</p>
 
-<a href="/campgrounds">View All Campgrounds</a>
+<link rel="stylesheet" href="./stylesheets/landing.css">
+
+<div class="container">
+    <div class="jumbotron">
+        <div id="text-container">
+            <h1>YelpCamp</h1>
+            <p>Start planning your next trip today</p>
+            <hr />
+            <a class="btn btn-default btn-lg" href="/campgrounds"><i class="fas fa-tree"></i> Get Started</a>
+        </div>
+    </div>
+</div>
 
 <% include partials/footer %>
